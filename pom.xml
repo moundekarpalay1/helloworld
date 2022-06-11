@@ -25,29 +25,17 @@
   <build>
     <plugins>
       <plugin>
-	 <groupId>org.apache.maven.plugins</groupId>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven.compiler.plugin.version}</version>
-         <executions>
-          <execution>
-            <id>buildnumber</id>
-            <phase>validate</phase>
-            <goals>
-              <goal>create</goal>
-            </goals>
-          </execution>
-        </executions>
         <configuration>
-          <format>{0,number}</format>
-          <items>
-            <item>buildNumber</item>
-          </items>                    
-          <doCheck>false</doCheck>
-          <doUpdate>false</doUpdate>
-          <revisionOnScmFailure>unknownbuild</revisionOnScmFailure>   
+          <source>${jdk.version}</source>
+          <target>${jdk.version}</target>
         </configuration>
       </plugin>
     </plugins>
 	  <finalName>${project.artifactId}-${project.version}.${buildNumber}</finalName>
   </build>
 </project>
+	  
+ 
