@@ -6,7 +6,7 @@
 
   <groupId>com.coveros.demo</groupId>
   <artifactId>helloworld</artifactId>
-  <version>1.0.(-Dv=${BUILD_NUMBER})</version>
+  <version>1.0.-Dv=${BUILD_NUMBER}</version>
   <packaging>jar</packaging>
 
   <name>Hello World</name>
