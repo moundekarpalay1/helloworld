@@ -23,7 +23,6 @@
   </properties>
 
   <build>
-    <finalName>${project.artifactId}-${project.version}-${buildNumber}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
